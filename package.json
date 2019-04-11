@@ -8,8 +8,11 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "start": "nodemon ./server.js"
   },
   "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
