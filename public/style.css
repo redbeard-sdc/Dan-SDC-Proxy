@@ -1,17 +1,65 @@
+#pricingAndPhotos {
+  display: flex;
+  justify-content: space-around;
+}
+
 #Pricing {
   display: block;
+  padding-left: 100px;
+  height: 100px;
 }
 
-#Header {
-  display: block;
+#photos {
+  width: 700px;
+  padding-right: 100px;
 }
 
-#Reviews {
+#header {
   display: block;
+  width: 75%;
+  margin-left: 140px;
+  margin-bottom: 25px;
 }
 
-#Location {
+#about {
   display: block;
+  width: 65%;
+  padding-left: 60px;
+  padding-top: 50px;
+
+}
+
+#aboutAndAds {
+  display: flex;
+  justify-content: space-around;
+}
+
+#ads {
+  display: flex wrap;
+}
+
+#ad1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+
+#ad2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+
+#reviews {
+  display: block;
+  height: 50%;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+#location {
+  display: block;
+  padding-left: 100px;
 }
 
 *,
@@ -21,7 +69,7 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: gray;
   color: #2c2c2c;
   font-family: Arial, Tahoma, sans-serif;
   overflow-y: scroll;
