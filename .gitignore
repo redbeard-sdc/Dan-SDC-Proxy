@@ -5,6 +5,11 @@
 npm
 npm-debug.log
 node_modules/
+proxy/node_modules/
+
+# Services #
+SDC_service/
+newrelic.js
 
 pids
 *.pid
