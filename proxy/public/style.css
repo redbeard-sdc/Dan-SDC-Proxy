@@ -1,68 +1,3 @@
-#pricingAndPhotos {
-  display: flex;
-  justify-content: space-around;
-}
-
-#Pricing {
-  display: block;
-  padding-left: 100px;
-  height: 100px;
-}
-
-#photos {
-  width: 700px;
-  padding-right: 100px;
-}
-
-#header {
-  display: block;
-  width: 75%;
-  margin-left: 140px;
-  margin-bottom: 25px;
-  background: white;
-}
-
-#about {
-  display: block;
-  width: 65%;
-  padding-left: 60px;
-  padding-top: 50px;
-
-}
-
-#aboutAndAds {
-  display: flex;
-  justify-content: space-around;
-}
-
-#ads {
-  display: flex wrap;
-}
-
-#ad1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-}
-
-#ad2 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-}
-
-#reviews {
-  display: block;
-  height: 50%;
-  padding-left: 100px;
-  padding-top: 50px;
-}
-
-#location {
-  display: block;
-  padding-left: 100px;
-}
-
 *,
 *::before,
 *::after {
@@ -70,8 +5,79 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2 !important;
+  color: #2c2c2c;
+  font-family: Arial, Tahoma, sans-serif;
+  overflow-y: scroll;
+}
+
+.container-pricing {
+  padding: 12px;
+  border: 1px solid rgb(229, 229, 229);
+  background-color: white;
+}
+
+.container-pricing-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.container-location {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+#location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid rgb(229, 229, 229);
+  background-color: white;
+  width: 811px;
+  height: 700px;
+}
+
+.container-outer {
   background-color: #f2f2f2;
   color: #2c2c2c;
   font-family: Arial, Tahoma, sans-serif;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.ad {
+  margin-left: 40px;
+  position: sticky;
+  top: 0;
+}
+
+.container-reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+
+#reviews {
+  width: 811px;
 }

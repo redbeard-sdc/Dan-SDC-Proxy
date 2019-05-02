@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>RickAdvisor Demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SDC Demo</title>
   </head>
   <body>
-    <div id="topnavbar">
-      <img src="topnavbar.PNG" width="100%"/>
-    </div>
-    <div id="header"></div>
-    <div id="pricingAndPhotos">
-      <div id="Pricing"></div>
-      <div id="photos">
-        <img src="https://s3-us-west-1.amazonaws.com/stanleyhotel/Screen+Shot+2019-04-12+at+12.05.05+PM.png" id="photos"/>
+    <div>
+      <div id="topnavbar"><img src="https://s3-us-west-1.amazonaws.com/stanleyhotel/Screen+Shot+2019-04-12+at+3.25.04+PM.png" width="100%"</div>
+      <div id="header"></div>
+      <div class="container-pricing-photos">
+        <div class="container-pricing">
+          <div id="Pricing"></div>
+        </div>
+        <div class="container-photos">
+          <img
+            src="https://s3-us-west-1.amazonaws.com/stanleyhotel/Screen+Shot+2019-04-12+at+12.05.05+PM.png"
+            alt="screenshot0"
+          />
+        </div>
+      </div>
+
+      <div class="container-about">
+        <div id="about"></div>
+        <div class="ad">
+          <img
+            src="https://s3-us-west-1.amazonaws.com/stanleyhotel/Screen+Shot+2019-04-12+at+3.41.44+PM.png"
+            alt="screenshot1"
+          />
+        </div>
+      </div>
+
+      <div class="container-location">
+        <div id="location"></div>
+      </div>
+      <div class="container-reviews">
+        <div id="reviews"></div>
+        <div class="ad">
+          <img
+            src="https://s3-us-west-1.amazonaws.com/stanleyhotel/Screen+Shot+2019-04-12+at+3.41.44+PM.png"
+            alt="screenshot1"
+          />
+        </div>
       </div>
     </div>
-    <div id="aboutAndAds">
-      <div id="about"></div>
-      <div id="ads">
-        <img src="jared_ad_2.png" id="ad1" />
-        <img src="jared_ad.jpeg" id="ad2" />
-      </div>
-    </div>
-    <div id="location"></div>
-    <div id="reviews"></div>
-    <script src="http://localhost:3003/bundle.js"></script>
+    <!-- Ian About service -->
+    <script
+      crossorigin="anonymous"
+      src="http://ec2-3-17-147-218.us-east-2.compute.amazonaws.com/bundle.js"
+    ></script>
+    <!-- Dan Booking Tool Service -->
+    <script
+      crossorigin="anonymous"
+      src="http://ec2-3-17-179-228.us-east-2.compute.amazonaws.com/bundle.js"
+    ></script>
+    <!-- Dmitri Reviews Service -->
+    <script
+      crossorigin="anonymous"
+      src="http://ec2-18-234-162-20.compute-1.amazonaws.com/bundle.js"
+    ></script>
+    <!-- Bevan Location Service -->
+    <script
+      crossorigin="anonymous"
+      src="http://loadballoc-231b959af5018acb.elb.us-east-2.amazonaws.com/bundle.js"
+    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApGWA1NEDnW8jiZq3pTgo7hapY-9VkUwk"></script>
   </body>
 </html>
